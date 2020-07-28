@@ -30,8 +30,8 @@ valid_commands = ["open","auto", "close", "status", "rain" ]
 api_commands = "[controllerid]/[faucetid]/[open|close|status|rain/[zone#]/[time in mins/0/1]"
 
 config = {
-    "email": "email", # fill in your email
-    "password": "password" 
+    "email": "EMAIL", # fill in your email
+    "password": "PASSWORD" 
 }
 
 controllers = {}
@@ -137,6 +137,6 @@ def api(controller,faucet,command,zone=0,time=0):
 		return "Error executing " + command
  
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5059, debug=False)
+    app.run(host='0.0.0.0', port=PORT, debug=False)
 
 

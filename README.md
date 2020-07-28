@@ -17,7 +17,7 @@ multiples of each, it has not been tested.
 # pip3 install flask-jsonpify
 # pip3 install json
 </pre>
-2. Change the login/password/port variables in the raincloudy_flask.py. My port in the example is 5059.
+2. Change the EMAIL/PASSWORD/PORT variables in the raincloudy_flask.py. My port in the example is 5059.
 3. Change directory in the .service file to match where your raincloudy_flask.py file is.
 4. Copy service file to /lib/systemd/system/ then enable it.
 <pre>
