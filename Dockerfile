@@ -6,6 +6,7 @@ ARG PORT=5059
 
 RUN mkdir /code
 WORKDIR /code
+ENV CURL_CA_BUNDLE=""
 
 RUN apt-get update -y && \
     apt-get install -y python3 python3-pip git && \
